@@ -7,6 +7,14 @@ public class NetworkedFPSInputController : MonoBehaviour {
 		motor = GetComponent <CharacterMotor>();
 	}
 
+	void Start()
+	{
+		if (networkView.isMine) 
+		{
+			transform.FindChild("Main Camera").gameObject.SetActive(true);
+		}
+	}
+
 	void Update()
 	{
 		if (networkView.isMine) 
