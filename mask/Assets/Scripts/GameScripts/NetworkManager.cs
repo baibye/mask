@@ -2,7 +2,7 @@
 using System.Collections;
 
 public class NetworkManager : MonoBehaviour {
-
+	
 	private const string typeName = "MaskGame";
 	private string serverName = "Server Name";
 
